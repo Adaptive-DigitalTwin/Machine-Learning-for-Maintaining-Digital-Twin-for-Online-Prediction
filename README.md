@@ -7,24 +7,24 @@ https://github.com/Adaptive-DigitalTwin/Surrogate-Assisted-Digital-Twin-Calibrat
 
 For different years span the experiment would be repeated given in files _'Parameter_CA00_CB00.mlx_', _'Parameter_CA05_CB05'_,..... .
 
-With the pool of data collected with above experimentation, the similar experiment will be performed but with additional parameters. 
-
-This experiment related procedure are already described into the thesis chapter, and also in the MATLAB 'main.mlx' file.
+With the pool of data collected with above experimentation, the similar experiment will be performed but with additional parameters (3 parameters situation). 
 
 #### Note: 
-This experiment utilises the Cathodic-Protection (CP) Model which is constructed using the BEASY software  (V21). As a result, the data types primarily pertain to the CP model.
+This experiment utilises the Cathodic-Protection (CP) Model which is constructed using the BEASY software  (V21). As a result, the data types primarily pertain to the CP model. 
 
+The experiment related procedure are already described into the thesis chapter, and also in the MATLAB 'main.mlx' file.
 
 ## Usage
 
 To run the code, first provide the necessary inputs into the 'main.mlx' file associated with the following variables:
 
 - `parameters`: A cell array of strings that contains the names of the parameters of interest.
+- `years` : The multiple years notation are provided to retrieve the above mentioned pool data from already performed experiments. The folder location should be matched as suggested in the file 'main.mlx'
 - `calibration_data_type`: A cell array of strings that contains the types of calibration data (for example the array could contain one or few of from these: 'voltage', 'normal current density' or 'electric field')
 - `metric`: A string that specifies the performance metric to use for optimization.
 - `IDs`: A cell array of lists, where each list consist of IDs for the corresponding calibration data type. 
 - `IDs_types`: A cell array of strings that contains the types of the data IDs (IDs types are given in the simulation files, such as 'Internal Points' , 'Mesh Points' , 'Element Points') .
-- `DOE_range1`: A 2x2 matrix that specifies the range of the DOE experiment for two variables.
+- `DOE_ranges`: The 2x2 matrix that specifies the range of the DOE experiment for the two varaibles cases for each year should be provided.
 - `root_folder`: A string that specifies the root folder for storing simulation and calibration data.
 - `simulation_seed_folder`: A string that specifies the folder that contains the initial simulation files, this should contains following 3 files incase of BEASY related experiments:
 -     .mat_cp (it holds the material related polarsation behaviour)
@@ -43,9 +43,9 @@ After providing the necessary inputs, run the code in the `main.mlx` file step b
 
 This project requires the following MATLAB (or external) modules:
 
-- `BEASY_IN_OUT1 (python-based)`: User built python module to obtain and modify Input-Output dataset to the BEASY model.
+- `BEASY_IN_OUT2 (python-based)`: User built python module to obtain and modify Input-Output dataset to the BEASY model.
 - `ccdesign` 
-- `fit`
+- `polyfitn`
 - `PYTHON software with the packages numpy, os, pandas, shutil and re` (should be installed in the system)
 
 ## References
@@ -53,4 +53,4 @@ This project requires the following MATLAB (or external) modules:
 For more information on the modules used in this project, please refer to the following resources:
 
 - `ccdesign`: [https://www.mathworks.com/help/stats/ccdesign.html](https://www.mathworks.com/help/stats/ccdesign.html)
-- `fit` : [https://uk.mathworks.com/help/curvefit/fit.html](https://uk.mathworks.com/help/curvefit/fit.html)
+- `polyfitn` : https://uk.mathworks.com/matlabcentral/fileexchange/34765-polyfitn
