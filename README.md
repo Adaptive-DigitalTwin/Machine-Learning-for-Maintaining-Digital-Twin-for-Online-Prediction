@@ -12,7 +12,7 @@ With the pool of data collected with above experimentation, a new experiment wil
 #### Note: 
 This experiment utilises the Cathodic-Protection (CP) Model which is constructed using the BEASY software  (V21). As a result, the data types primarily pertain to the CP model. 
 
-The experiment related procedure are already described into the thesis chapter, and also in the MATLAB _'main.mlx'_ file.
+The procedures related to the experiment are comprehensively detailed in the thesis's **Chapter 9**. Additionally, the necessary technical aspects are outlined within the MATLAB file _'main.mlx.'_
 
 ## Usage
 
