@@ -34,6 +34,10 @@ To run the code, first provide the necessary inputs into the 'main.mlx' file ass
 
 After providing the necessary inputs, run the code in the `main.mlx` file step by step. The code will generate simulation data, generate a surrogate (response surface), evaluate the accuracy of the surrogate model, use the surrogate to find the solution parameter based upon the calibration data provided, and plot the results.
 
+### Output
+The aim of the experiment is to obtain the parameters as well as the additional para value which will be obtained as _'min_out_pos20'_ after the experiment. But also the additional process data can be visualised and seen in the 'main.mlx' file itselt while the simulation data will be stored into the collection directory.
+
+
 ## Dependencies
 
 This project requires the following MATLAB (or external) modules:
