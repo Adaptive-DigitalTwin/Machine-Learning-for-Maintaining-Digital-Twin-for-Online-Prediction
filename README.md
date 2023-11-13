@@ -5,9 +5,9 @@
 This experiment builts upon the multiple experiments perfromed following the procedure in :
 https://github.com/Adaptive-DigitalTwin/Surrogate-Assisted-Digital-Twin-Calibration
 
-For different years span the experiment would be repeated given in files _'Parameter_CA00_CB00.mlx_', _'Parameter_CA05_CB05'_,..... .
+For different years span the surrogate based experiment found in above link would be repeated within the files _'Parameter_CA00_CB00.mlx_', _'Parameter_CA05_CB05'_,..... in the current repository.
 
-With the pool of data collected with above experimentation, the similar experiment will be performed but with additional parameters (3 parameters situation). 
+With the pool of data collected with above experimentation, a new experiment will be performed but with additional parameters (3 parameters situation). 
 
 #### Note: 
 This experiment utilises the Cathodic-Protection (CP) Model which is constructed using the BEASY software  (V21). As a result, the data types primarily pertain to the CP model. 
