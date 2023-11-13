@@ -12,7 +12,7 @@ With the pool of data collected with above experimentation, a new experiment wil
 #### Note: 
 This experiment utilises the Cathodic-Protection (CP) Model which is constructed using the BEASY software  (V21). As a result, the data types primarily pertain to the CP model. 
 
-The experiment related procedure are already described into the thesis chapter, and also in the MATLAB 'main.mlx' file.
+The experiment related procedure are already described into the thesis chapter, and also in the MATLAB _'main.mlx'_ file.
 
 ## Usage
 
@@ -32,10 +32,10 @@ To run the code, first provide the necessary inputs into the 'main.mlx' file ass
 - `calib_data_no_error`: A dictionary that contains the calibration data without error .
 - `calib_data_inc_error`: A cell array of matrices that contains the calibration data with error.
 
-After providing the necessary inputs, run the code in the `main.mlx` file step by step. The code will generate simulation data, generate a surrogate (response surface), evaluate the accuracy of the surrogate model, use the surrogate to find the solution parameter based upon the calibration data provided, and plot the results.
+After providing the necessary inputs, run the code in the _`main.mlx`_ file step by step. The code will generate simulation data, generate a surrogate (response surface), evaluate the accuracy of the surrogate model, use the surrogate to find the solution parameter based upon the calibration data provided, and plot the results.
 
 ### Output
-The aim of the experiment is to obtain the future parameters value which will be obtained as _'min_out_pos20'_ after the experiment. This represent using the data from Years 0, 5, 10, and 15 to obtain the future status. The additional process data can be visualised and seen in the 'main.mlx' file itselt while the simulation data will be stored into the collection directory.
+The aim of the experiment is to obtain the future parameters value which will be obtained as _'min_out_pos20'_ after the experiment. This represent using the data from Years _0, 5, 10, and 15_ to obtain the future status. The additional process data can be visualised and seen in the _'main.mlx'_ file itself while the simulation data will be stored into the collection directory.
 
 
 ## Dependencies
