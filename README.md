@@ -20,19 +20,13 @@ To run the code, first provide the necessary inputs into the 'main.mlx' file ass
 
 - `parameters`: A cell array of strings that contains the names of the parameters of interest.
 - `years` : The multiple years notation are provided to retrieve the above mentioned pool data from already performed experiments. The folder location should be matched as suggested in the file 'main.mlx'
-- `calibration_data_type`: A cell array of strings that contains the types of calibration data (for example the array could contain one or few of from these: 'voltage', 'normal current density' or 'electric field')
+- `response_data_type`: A cell array of strings that contains the types of response data (for example the array could contain one or few of from these: 'voltage', 'normal current density' or 'electric field')
 - `metric`: A string that specifies the performance metric to use for optimization.
 - `IDs`: A cell array of lists, where each list consist of IDs for the corresponding calibration data type. 
 - `IDs_types`: A cell array of strings that contains the types of the data IDs (IDs types are given in the simulation files, such as 'Internal Points' , 'Mesh Points' , 'Element Points') .
 - `DOE_ranges`: The 2x2 matrix that specifies the range of the DOE experiment for the two varaibles cases for each year should be provided.
-- `root_folder`: A string that specifies the root folder for storing simulation and calibration data.
-- `simulation_seed_folder`: A string that specifies the folder that contains the initial simulation files, this should contains following 3 files incase of BEASY related experiments:
--     .mat_cp (it holds the material related polarsation behaviour)
--     .dat (It holds the strucutre geomertical data including the meshing and their co-ordinates)
--     .bat (This the the simulation running file, which once runs by taking the above two files generates the output by claling the BEASY software)
-- `collection_dir`: A string that specifies the folder for storing simulation results.
-- `testing_par`: A vector of parameter values for testing the surrogate model.
-- `calib_dir`: A string that specifies the folder that contains the calibration data.
+- `root_folder1`: A string that specifies the root folder to all year data.
+-  `calib_dir`: A string that specifies the folder that contains the calibration data.
 - `calib_data_file_err_inc`: A string that specifies the name of the file that contains the calibration data with error (The file should be in excel or csv file format).
 - `calib_data_no_error`: A dictionary that contains the calibration data without error .
 - `calib_data_inc_error`: A cell array of matrices that contains the calibration data with error.
